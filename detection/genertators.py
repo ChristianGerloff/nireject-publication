@@ -2,6 +2,10 @@
 Generates different data conditions
 """
 
+# Author: Christian Gerloff <christian.gerloff@rwth-aachen.de>
+# License: see repository LICENSE file
+
+
 import numpy as np
 import pandas as pd
 

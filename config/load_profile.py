@@ -1,4 +1,8 @@
 """Loads configured profiles from a YAML config file."""
+
+# Author: Christian Gerloff <christian.gerloff@rwth-aachen.de>
+# License: see repository LICENSE file
+
 import yaml
 import logging
 from pathlib import Path
