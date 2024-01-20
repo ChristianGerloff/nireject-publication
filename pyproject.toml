@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "nireject-publication"
+version = "0.1.0"
+description = "tba"
+authors = ["Christan Gerloff <christian.gerloff@rwth-aachen.de>"]
+license = "tba"
+
+[tool.poetry.dependencies]
+python = ">=3.8.8,<3.11"
+numpy = "^1.22.2"
+pandas = "^1.4.0"
+h5py = "^3.6.0"
+pooch = "^1.6.0"
+fooof = "^1.0.0"
+nilearn = "^0.9.0"
+mne-nirs = "0.5"
+matplotlib = "^3.5.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.9.0"
+seaborn = "^0.11.2"
+scikit-learn = "^1.0.2"
+pyod = "^1.0.4"
+pyarrow = "^7.0.0"
+baycomp = "^1.0.2"
+arviz = "0.12.1"
+xgboost = "^1.5.2"
+scikit-optimize = "^0.9.0"
+keras = "^2.9.0"
+tensorflow = "^2.9.1"
+python-dotenv = "^0.21.0"
+pydantic = "^1.10.2"
+boto3 = "^1.24.87"
+mlflow = "1.29.0"
+datamodel-code-generator = "^0.13.1"
+networkx = "^2.8.7"
+tabpfn = "0.1.8"
+KDEpy = "^1.1.0"
+mne = "^1.5.1"
+openpyxl = "^3.1.2"
+pystan = "3.8.0"
+nest-asyncio = "^1.5.8"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.6.0"
+flake8 = "^4.0.1"
+pylint = "^2.12.2"
+mlflow = "^1.23.1"
+pytest = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,22 @@
+# Python Tools for Visual Studio (PTVS)
+__pycache__/
+*.pyc
+
+# VS directories
+.vs/
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
+conf/**
+
+# Data
+*.csv
+*.mat
+*.asv
+**/data/**
+**/mlruns/**
+**/test/**
+
+# Notes
+*notes.md
