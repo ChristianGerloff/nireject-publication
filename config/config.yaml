@@ -1,0 +1,654 @@
+Q1:
+  NirejectNamesProfile:
+    detectors:
+      - NirejectProfile:
+    semi_supervised_detectors:
+      - NirejectProfile:
+          name: 'semi-super-t-annotate-augemted_training'
+          task: 'supervised-t'
+          annotate: True
+          augmented_training: True
+
+N21_UNGROUPED_AAFT:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q1'
+      dataset: 'N21'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/trinh.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+R22_UNGROUPED_AAFT:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q1'
+      dataset: 'R22'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+UNCOUPLED_HRF_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'UNCOUPLED_HRF_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/uncoupled_hrf_07_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SIGNALLOSS_10_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SIGNALLOSS_10_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/signallos_10.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SIGNALLOSS_50_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SIGNALLOSS_50_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/signallos_50.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SIGNALLOSS_100_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SIGNALLOSS_100_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/signallos_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SHIFTSuni_12_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SHIFTSuni_12_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/shiftsu_12_high_amp_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SHIFTSuni_24_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SHIFTSuni_24_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/shiftsu_24_high_amp_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+SHIFTSuni_36_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SHIFTSuni_36_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/shiftsu_36_high_amp_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SHIFTS_12_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SHIFTS_12_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/shifts_12_high_amp_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SHIFTS_24_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SHIFTS_24_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/shifts_24_high_amp_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+SHIFTS_36_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'SHIFTS_36_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/shifts_36_high_amp_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+PEAKS_6_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'PEAKS_6_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/peaks_6_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+PEAKS_36_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'PEAKS_36_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/peaks_36_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+
+PEAKS_60_AAFT_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'PEAKS_60_AAFT_100'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/peaks_60_100.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+ANNOTATION_ERROR_1:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'ANNOTATION-ERROR_1%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    label_noise_ratio: 0.01
+
+ANNOTATION_ERROR_5:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'ANNOTATION-ERROR_5%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    label_noise_ratio: 0.05
+
+ANNOTATION_ERROR_10:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'ANNOTATION-ERROR_10%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    label_noise_ratio: 0.1
+
+ANNOTATION_ERROR_25:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'ANNOTATION-ERROR_25%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    label_noise_ratio: 0.25
+
+ANNOTATION_ERROR_50:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'ANNOTATION-ERROR_50%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    label_noise_ratio: 0.50
+
+ANNOTATION_ERROR_75:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'ANNOTATION-ERROR_75%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    label_noise_ratio: 0.75
+
+ANNOTATION_ERROR_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'ANNOTATION-ERROR_100%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    label_noise_ratio: 1.0
+
+LABELLED_1:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'LABELLED_1%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    gamma: 0.01
+
+LABELLED_5:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'LABELLED_5%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    gamma: 0.05 
+
+LABELLED_10:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'LABELLED_10%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    gamma: 0.1
+
+ 
+LABELLED_25:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'LABELLED_25%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    gamma: 0.25
+
+LABELLED_50:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'LABELLED_50%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    gamma: 0.5
+
+LABELLED_75:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'LABELLED_75%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    gamma: 0.75
+
+LABELLED_100:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q2'
+      dataset: 'LABELLED_100%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    gamma: 1.0
+
+CONTAMINATION_1:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_1%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.01
+
+CONTAMINATION_2:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_2%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.02
+
+CONTAMINATION_3:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_3%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.03
+
+CONTAMINATION_4:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_4%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.04
+
+CONTAMINATION_5:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_5%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.05
+
+CONTAMINATION_7.5:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_7.5%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.075 
+
+CONTAMINATION_10:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_10%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.1
+
+CONTAMINATION_15:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_15%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.15
+
+CONTAMINATION_20:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_20%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.2
+
+CONTAMINATION_25:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_25%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.25
+
+CONTAMINATION_30:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_30%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.30
+
+CONTAMINATION_40:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_40%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.40
+
+CONTAMINATION_50:
+  ETLProfile:
+    output_path: 'test'
+    tags:
+      stage: etl
+      question: 'Q3'
+      dataset: 'CONTAMINATION_50%'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/ers.parquet'
+  SamplingProfile:
+    test_size: 0.4
+    augmentation:
+      - 'AAFT'
+    c_rate: 0.5
+
+HYBRID_CHANNEL_MIXED_V3_AAFT_VR:
+  ETLProfileHybrid:
+    output_path: 'test'
+    ratings_filename: '/nireject/data/results/channel_mixed_v3/expert_rating_VR.csv'
+    tags:
+      stage: etl
+      question: 'Q5'
+      dataset: 'HYBRID_CHANNEL_MIXED_V3_AAFT_VR'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/channel_mixed_v3.parquet'
+  ProcessingHybridProfile:
+    mode: 'hybrid'
+    augmentation:
+      - 'AAFT'
+
+HYBRID_CHANNEL_MIXED_V3_AAFT_LM:
+  ETLProfileHybrid:
+    output_path: 'test'
+    ratings_filename: '/nireject/data/results/channel_mixed_v3/expert_rating_LM.csv'
+    tags:
+      stage: etl
+      question: 'Q5'
+      dataset: 'HYBRID_CHANNEL_MIXED_V3_AAFT_LM'
+  DataLoaderProfile:
+    filename: '/nireject/data/features/channel_mixed_v3.parquet'
+  ProcessingHybridProfile:
+    mode: 'hybrid'
+    augmentation:
+      - 'AAFT'

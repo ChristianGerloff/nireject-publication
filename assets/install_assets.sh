@@ -1,0 +1,2 @@
+wget -O python/FEAWAD.py https://raw.githubusercontent.com/Minqi824/ADBench/main/adbench/baseline/FEAWAD/run.py
+wget -O python/myutils.py https://github.com/Minqi824/ADBench/blob/main/adbench/myutils.py
