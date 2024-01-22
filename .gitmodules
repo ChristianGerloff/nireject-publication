@@ -1,0 +1,6 @@
+[submodule "assets/matlab/nirs-toolbox"]
+	path = assets/matlab/nirs-toolbox
+	url = https://github.com/huppertt/nirs-toolbox
+[submodule "assets/matlab/fooof_mat"]
+	path = assets/matlab/fooof_mat
+	url = https://github.com/ChristianGerloff/fooof_mat

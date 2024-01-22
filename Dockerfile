@@ -6,6 +6,8 @@ RUN apt-get update && apt-get install -y \
 RUN mkdir /nireject
 COPY . /nireject
 WORKDIR /nireject
+RUN chmod +x assets/install_assets.sh &&\
+    ./assets/install_assets.sh
 RUN pip3 install poetry &&\
     poetry config virtualenvs.create false &&\
     poetry install --no-dev
